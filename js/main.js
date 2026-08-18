@@ -145,6 +145,9 @@
               } else {
                 entry.target.classList.add("reveal--visible");
               }
+              if (entry.target.classList.contains("process-card")) {
+                entry.target.classList.add("is-lit");
+              }
             }, delay);
             obs.unobserve(entry.target);
           }
@@ -163,6 +166,7 @@
     setTimeout(() => {
       revealElements.forEach((el) => {
         el.classList.add("reveal--visible", "reveal-left--visible", "reveal-right--visible");
+        if (el.classList.contains("process-card")) el.classList.add("is-lit");
       });
     }, 4000);
   }
@@ -211,6 +215,75 @@
   }
 
   // ============================================================
+  // Timeline glow — progress line fills as the section scrolls
+  // ============================================================
+  function initTimelineGlow() {
+    const grid = document.getElementById("process-timeline");
+    if (!grid) return;
+    const section = grid.closest(".process");
+    if (!section) return;
+
+    let ticking = false;
+
+    function update() {
+      const rect = section.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      const total = rect.height + vh;
+      const seen = vh - rect.top;
+      let p = seen / total;
+      p = Math.max(0, Math.min(1, p));
+      grid.style.setProperty("--timeline-progress", (p * 100).toFixed(2) + "%");
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    update();
+  }
+
+  // ============================================================
+  // ============================================================
+  // Portfolio cover-flow: center card scales up, 3 visible at once
+  // ============================================================
+  function initPortfolioCoverFlow() {
+    const scroller = document.querySelector(".portfolio__scroller");
+    if (!scroller) return;
+    const cards = Array.from(scroller.querySelectorAll(".portfolio-card"));
+    if (!cards.length) return;
+
+    const setCenter = (card) => {
+      cards.forEach((c) => c.classList.remove("is-center"));
+      card.classList.add("is-center");
+    };
+
+    // Start centered on a middle card so 3 images are visible immediately
+    const startIndex = Math.floor((cards.length - 1) / 2);
+    requestAnimationFrame(() => {
+      const card = cards[startIndex];
+      scroller.scrollLeft = card.offsetLeft - (scroller.clientWidth - card.offsetWidth) / 2;
+      setCenter(card);
+    });
+
+    // Mark the card crossing the horizontal center line as active.
+    // rootMargin shrinks left/right by 50%, leaving a center vertical strip.
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setCenter(entry.target);
+        });
+      },
+      { root: scroller, rootMargin: "0px -50% 0px -50%", threshold: 0 }
+    );
+    cards.forEach((c) => io.observe(c));
+  }
+
   // Initialize everything
   // ============================================================
   function init() {
@@ -219,8 +292,10 @@
     initScrollspy();
     initHeaderScroll();
     initReveal();
+    initTimelineGlow();
     initFAQ();
     initFloatingWA();
+    initPortfolioCoverFlow();
   }
 
   if (document.readyState === "loading") {

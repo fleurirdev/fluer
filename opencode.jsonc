@@ -1,0 +1,65 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+  "context7": {
+    "type": "remote", 
+    "url": "https://mcp.context7.com/mcp",
+    "headers": {
+      "CONTEXT7_API_KEY": "ctx7sk-f60fb504-131c-44ac-9a25-2e531d692e3d"
+    },
+    "enabled": true 
+  },
+      "dataforseo": {
+      "type": "local",
+      "command": ["npx", "-y", "dataforseo-mcp-server@latest"],
+      "enabled": true,
+      "environment": {
+        "DATAFORSEO_USERNAME": "arsatmac@gmail.com",
+        "DATAFORSEO_PASSWORD": "e7fb1851e4352c18",
+        "ENABLED_MODULES": "SERP,KEYWORDS_DATA,DATAFORSEO_LABS,BACKLINKS"
+      }
+    }
+},
+  "provider": {
+    "mimo": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "MiMo",
+      "options": {
+        "baseURL": "https://api.xiaomimimo.com/v1",
+        "apiKey": "sk-s8kd2g4trya92bq9bpfqh1gqdt3w9gr9ihw6cyudg3or457c"
+      },
+      "models": {
+        "mimo-v2.5-pro": {
+          "name": "mimo-v2.5-pro",
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "mimo-v2.5": {
+          "name": "mimo-v2.5",
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          },
+          "modalities": {
+            "input": [
+              "text", "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
