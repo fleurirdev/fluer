@@ -16,6 +16,7 @@
   --color-accent-soft: #E8E2DB;
   --color-accent-2: #FE7F2D;
   --color-accent-3: #FB9E5C;
+  --text-accent: var(--color-accent);
 
   /* Gradient helpers (kept as solid fallbacks; no gradient on buttons/text) */
   --gradient-accent: var(--color-accent);
@@ -87,6 +88,7 @@
   --color-accent: #2E5566;
   --color-accent-hover: #3E6B7E;
   --color-accent-light: #8FB0BC;
+  --text-accent: var(--color-accent-light);
   --color-accent-dark: #1B3540;
   --color-accent-soft: #16262F;
   --color-accent-2: #FE7F2D;
@@ -226,7 +228,7 @@ button {
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--text-accent);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: var(--space-16);
@@ -279,8 +281,8 @@ button {
 
 .btn--secondary {
   background-color: transparent;
-  color: var(--color-accent);
-  border: 1.5px solid var(--color-accent);
+  color: var(--text-accent);
+  border: 1.5px solid var(--text-accent);
 }
 
 .btn--secondary:hover {
@@ -381,7 +383,7 @@ button {
 
 .nav__link:hover,
 .nav__link--active {
-  color: var(--color-accent);
+  color: var(--text-accent);
   background-color: var(--bg-glass);
 }
 
@@ -536,7 +538,7 @@ button {
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--text-accent);
   margin-bottom: var(--space-24);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -697,7 +699,7 @@ button {
 }
 
 .service-card__audience strong {
-  color: var(--color-accent);
+  color: var(--text-accent);
   font-weight: 700;
 }
 
@@ -714,7 +716,7 @@ button {
 
 .service-card:nth-child(3) .service-card__icon {
   background: rgba(35, 61, 77, 0.10);
-  color: var(--color-accent);
+  color: var(--text-accent);
 }
 
 .service-card:nth-child(4) .service-card__icon {
@@ -724,8 +726,8 @@ button {
 
 .service-card:nth-child(5) .service-card__icon {
   background: transparent;
-  border: 1.5px solid var(--color-accent);
-  color: var(--color-accent);
+  border: 1.5px solid var(--text-accent);
+  color: var(--text-accent);
 }
 
 /* Featured "Paling Laris" card — thin brand → secondary gradient tint */
@@ -854,13 +856,13 @@ button {
   height: 44px;
   border-radius: 50%;
   background: var(--bg-secondary);
-  border: 3px solid var(--color-accent);
+  border: 3px solid var(--text-accent);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.125rem;
   font-weight: 800;
-  color: var(--color-accent);
+  color: var(--text-accent);
   opacity: 1;
   line-height: 1;
   box-shadow: 0 0 0 4px var(--bg-secondary);
@@ -909,7 +911,7 @@ button {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--text-accent);
   background-color: var(--bg-glass);
   padding: 2px 8px;
   border-radius: var(--radius-full);
@@ -973,7 +975,7 @@ button {
   height: 48px;
   border-radius: var(--radius-md);
   background-color: var(--bg-glass);
-  color: var(--color-accent);
+  color: var(--text-accent);
 }
 
 .why-card__icon svg {
@@ -1033,10 +1035,10 @@ button {
 }
 
 .portfolio-card.is-center {
-  transform: scale(1.15);
+  transform: scale(1.25);
   opacity: 1;
   z-index: 2;
-  margin-inline: clamp(-44px, -4vw, -24px);
+  margin-inline: clamp(-44px, -2vw, -24px);
 }
 
 @media (max-width: 768px) {
@@ -1256,7 +1258,7 @@ button {
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  color: var(--color-accent);
+  color: var(--text-accent);
   margin-top: 2px;
 }
 
@@ -1335,7 +1337,7 @@ button {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  color: var(--color-accent);
+  color: var(--text-accent);
   transition: transform var(--transition-base);
 }
 
@@ -1346,7 +1348,7 @@ button {
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition-base), padding var(--transition-base);
+  transition: max-height var(--transition-base);
 }
 
 .faq__answer-inner {
@@ -1354,10 +1356,16 @@ button {
   font-size: 0.9375rem;
   color: var(--text-secondary);
   line-height: 1.7;
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
 .faq__item--open .faq__answer {
   max-height: 1000px;
+}
+
+.faq__item--open .faq__answer-inner {
+  opacity: 1;
 }
 
 /* -----------------------------------------------------------
@@ -1492,7 +1500,7 @@ button {
 .footer__contact a:hover,
 .footer__menu a:hover,
 .footer__social a:hover {
-  color: var(--color-accent);
+  color: var(--text-accent);
 }
 
 .footer__contact span {

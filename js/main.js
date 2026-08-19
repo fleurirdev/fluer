@@ -210,6 +210,11 @@
     const faqList = document.getElementById("faq-list");
     if (!faqList) return;
 
+    const answers = faqList.querySelectorAll(".faq__answer");
+    answers.forEach((answer) => {
+      answer.style.maxHeight = "0px";
+    });
+
     faqList.addEventListener("click", (e) => {
       const button = e.target.closest(".faq__question");
       if (!button) return;
@@ -221,13 +226,23 @@
       faqList.querySelectorAll(".faq__item--open").forEach((openItem) => {
         openItem.classList.remove("faq__item--open");
         openItem.querySelector(".faq__question").setAttribute("aria-expanded", "false");
+        const a = openItem.querySelector(".faq__answer");
+        if (a) a.style.maxHeight = "0px";
       });
 
-      // Open clicked if it was closed
+      // Open clicked if it was closed (animate to exact content height)
       if (!isOpen) {
         item.classList.add("faq__item--open");
         button.setAttribute("aria-expanded", "true");
+        const a = item.querySelector(".faq__answer");
+        if (a) a.style.maxHeight = a.scrollHeight + "px";
       }
+    });
+
+    // keep an open answer correctly sized if the viewport reflows
+    window.addEventListener("resize", () => {
+      const open = faqList.querySelector(".faq__item--open .faq__answer");
+      if (open) open.style.maxHeight = open.scrollHeight + "px";
     });
   }
 
