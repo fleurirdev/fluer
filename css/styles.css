@@ -1003,6 +1003,7 @@ button {
   --card-w: clamp(280px, 56vw, 700px);
   display: flex;
   align-items: center;
+
   gap: clamp(8px, 1.5vw, 16px);
   overflow-x: auto;
   overflow-y: hidden;
@@ -1027,6 +1028,7 @@ button {
   scroll-snap-align: center;
   transform: scale(0.96);
   opacity: 0.9;
+
   transition: transform 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
 }
 

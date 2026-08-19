@@ -3,7 +3,7 @@
 ## Metadata (SEO)
 
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
-- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO-friendly.
+- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
 - **Keywords:** jasa pembuatan website, jasa buat website, jasa bikin website, jasa website, jasa pembuatan website profesional, bikin website murah, website murah, jasa bikin landing page, jasa website UMKM, harga bikin website, jasa redesign website, jasa website toko online, bikin website untuk bisnis, jasa pembuatan website Medan
 - **Author:** Fleur
 - **Canonical:** https://Fleur.id/jasa-pembuatan-website
@@ -11,7 +11,7 @@
 ### Open Graph
 
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
-- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO-friendly.
+- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
 - **URL:** https://Fleur.id/jasa-pembuatan-website
 - **Image:** https://Fleur.id/assets/og-image.jpg
 - **Locale:** id_ID
@@ -21,7 +21,7 @@
 
 - **Card:** summary_large_image
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
-- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO-friendly.
+- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
 - **Image:** https://Fleur.id/assets/og-image.jpg
 
 ---
@@ -180,7 +180,7 @@ A: Bisa dong. Paket umkm dapat 2x revisi, Paket Bisnis 3x revisi, Paket Custom m
 A: Udah. Semua paket include domain .com dan hosting buat 1 tahun pertama, jadi nggak ada biaya siluman di tengah jalan.
 
 **Q: Website saya bakal muncul di Google nggak?**
-A: Semua website profesional yang kami bikin udah SEO-friendly dari sananya: struktur rapi, loading cepat, nyaman di HP, dan didaftarin ke Google Search Console. Mau lebih agresif ngejar halaman 1? Ada layanan konten & SEO lanjutan juga.
+A: Semua website profesional yang kami bikin udah SEO friendly dari sananya: struktur rapi, loading cepat, nyaman di HP, dan didaftarin ke Google Search Console. Mau lebih agresif ngejar halaman 1? Ada layanan konten & SEO lanjutan juga.
 
 **Q: Nanti bisa update konten sendiri nggak?**
 A: Bisa banget. Kami kasih panduan singkat cara ganti teks dan gambar sendiri. Nggak mau repot? Ambil paket Maintenance bulanan, kami yang urus semua.
@@ -192,7 +192,7 @@ A: Ada. Garansi teknis 30 hari buat perbaikan bug atau error setelah launch. Mau
 A: Paket UMKM (landing page) mulai Rp 800.000, Paket Bisnis (company profile) mulai Rp 1.400.000, dan Paket Custom by request. Semua sudah include domain .com + hosting 1 tahun, gratis konsultasi, dan revisi sesuai paket — harganya transparan di awal, nggak ada biaya tersembunyi.
 
 **Q: Kenapa mending pesan jasa daripada bikin sendiri atau pakai template murah?**
-A: Template website murah emang kelihatan cepat, tapi sering lemot, nggak nyambung sama bisnismu, dan susah muncul di Google. Kami kasih website profesional yang desainnya disesuaikan brand kamu, sudah SEO-friendly, mobile-friendly, plus didampingi sampai online. Investasi sekali, manfaatnya buat jangka panjang.
+A: Template website murah emang kelihatan cepat, tapi sering lemot, nggak nyambung sama bisnismu, dan susah muncul di Google. Kami kasih website profesional yang desainnya disesuaikan brand kamu, sudah SEO friendly, mobile friendly, plus didampingi sampai online. Investasi sekali, manfaatnya buat jangka panjang.
 
 ---
 
@@ -213,7 +213,7 @@ A: Template website murah emang kelihatan cepat, tapi sering lemot, nggak nyambu
 
 **Kontak**
 - WhatsApp: +62 8XXXXXXXXX
-- Email: halo@Fleur.com
+- Email: fleurirdev@gmail.com
 
 **Menu**
 - Layanan

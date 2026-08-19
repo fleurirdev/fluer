@@ -3,7 +3,7 @@
 Dokumen ini adalah referensi standar section untuk landing page, digunakan berdampingan dengan `design.md`. Tujuannya: setiap kali membuat landing page baru (jasa, produk, travel, umroh, atau pemerintahan/desa), tinggal pilih kategori di bawah lalu susun section sesuai urutan yang direkomendasikan.
 
 ---
-## 0. Penulisan code harus mencapai SEO-FRIENDLY
+## 0. Penulisan code harus mencapai SEO friendly
  - penggunaan tags yang mengkedepankan SEO
  - kompres image untuk peforma
  - rekomendasi penerapan lain untuk mencapai SEO hight
