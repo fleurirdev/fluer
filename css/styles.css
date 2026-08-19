@@ -1683,14 +1683,37 @@ button {
   .footer__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .hero {
-    padding-top: 100px;
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .nav__link {
+    padding: 12px 10px;
+    font-size: .7rem;
   }
 
-  .hero__content {
-    max-width: 100%;
+.hero {
+  max-height: 20vh;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+  .hero__showcase {
+
+  left: 50%;
+  bottom: 12rem;
+  width: min(92vw, 960px);
+
   }
+
+  .hero__title {
+    line-height: 3.5rem;
+  }
+  .services {
+    padding-top: 40px;
+  }
+
+
 }
 
 @media (max-width: 767px) {
