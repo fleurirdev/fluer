@@ -3,7 +3,7 @@
 ## Metadata (SEO)
 
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
-- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
+- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 499.000, gratis konsultasi. Cepat & SEO friendly.
 - **Keywords:** jasa pembuatan website, jasa buat website, jasa bikin website, jasa website, jasa pembuatan website profesional, bikin website murah, website murah, jasa bikin landing page, jasa website UMKM, harga bikin website, jasa redesign website, jasa website toko online, bikin website untuk bisnis, jasa pembuatan website Medan
 - **Author:** Fleur
 - **Canonical:** https://Fleur.id/jasa-pembuatan-website
@@ -11,7 +11,7 @@
 ### Open Graph
 
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
-- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
+- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 499.000, gratis konsultasi. Cepat & SEO friendly.
 - **URL:** https://Fleur.id/jasa-pembuatan-website
 - **Image:** https://Fleur.id/assets/og-image.jpg
 - **Locale:** id_ID
@@ -21,7 +21,7 @@
 
 - **Card:** summary_large_image
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
-- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
+- **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 499.000, gratis konsultasi. Cepat & SEO friendly.
 - **Image:** https://Fleur.id/assets/og-image.jpg
 
 ---
@@ -45,14 +45,14 @@
 **Subtitle:** Bikin bisnismu makin dipercaya & laris — website cepat jadi, enak dilihat, dan beneran bantu datengin pelanggan. Bukan cuma pajangan doang.
 
 **CTA:**
-- Cek Harga Mulai Rp 800.000
+- Cek Harga Mulai Rp 499.000
 - Konsultasi Gratis via WhatsApp
 
 **Statistik:**
 - 1–3 Hari — Rampung & Live
 - 100% — Gratis Konsultasi
 - 100% — Gratis Revisi
-- Mulai Rp 800.000 — Harga Transparan
+- Mulai Rp 499.000 — Harga Transparan
 
 ---
 
@@ -129,7 +129,7 @@ Langganan bulanan update konten, backup rutin, jaga keamanan, dan beresin error.
 *Deskripsi:* Pilih sesuai budget dan kebutuhanmu
 
 ### Paket UMKM — Landing Page
-**Mulai dari Rp 800.000**
+**Mulai dari Rp 499.000**
 
 - 1 halaman landing page fokus jualan
 - Desain custom, bukan template pasaran
@@ -142,7 +142,7 @@ Langganan bulanan update konten, backup rutin, jaga keamanan, dan beresin error.
 → Ambil Paket UMKM
 
 ### Paket Bisnis — Company Profile *(Paling Laris)*
-**Mulai dari Rp 1.400.000**
+**Mulai dari Rp 1.800.000**
 
 - 5+ halaman page
 - Semua yang ada di Paket Starter
@@ -189,7 +189,7 @@ A: Bisa banget. Kami kasih panduan singkat cara ganti teks dan gambar sendiri. N
 A: Ada. Garansi teknis 30 hari buat perbaikan bug atau error setelah launch. Mau support jangka panjang? Tinggal lanjut ke paket maintenance.
 
 **Q: Berapa kisaran harga bikin website di Fleur?**
-A: Paket UMKM (landing page) mulai Rp 800.000, Paket Bisnis (company profile) mulai Rp 1.400.000, dan Paket Custom by request. Semua sudah include domain .com + hosting 1 tahun, gratis konsultasi, dan revisi sesuai paket — harganya transparan di awal, nggak ada biaya tersembunyi.
+A: Paket UMKM (landing page) mulai Rp 499.000, Paket Bisnis (company profile) mulai Rp 1.800.000, dan Paket Custom by request. Semua sudah include domain .com + hosting 1 tahun, gratis konsultasi, dan revisi sesuai paket — harganya transparan di awal, nggak ada biaya tersembunyi.
 
 **Q: Kenapa mending pesan jasa daripada bikin sendiri atau pakai template murah?**
 A: Template website murah emang kelihatan cepat, tapi sering lemot, nggak nyambung sama bisnismu, dan susah muncul di Google. Kami kasih website profesional yang desainnya disesuaikan brand kamu, sudah SEO friendly, mobile friendly, plus didampingi sampai online. Investasi sekali, manfaatnya buat jangka panjang.
