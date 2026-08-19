@@ -14,10 +14,9 @@
     const html = document.documentElement;
     if (!toggle) return;
 
-    // Default: system preference
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    // Default: light
     const savedTheme = localStorage.getItem("Fleur-theme");
-    const isDark = savedTheme ? savedTheme === "dark" : systemDark;
+    const isDark = savedTheme === "dark";
 
     if (isDark) {
       html.setAttribute("data-theme", "dark");
@@ -34,15 +33,6 @@
       localStorage.setItem("Fleur-theme", next);
       toggle.setAttribute("aria-pressed", next === "dark" ? "true" : "false");
     });
-
-    // Listen to system changes if no saved preference
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-      if (!localStorage.getItem("Fleur-theme")) {
-        const next = e.matches ? "dark" : "light";
-        html.setAttribute("data-theme", next);
-        toggle.setAttribute("aria-pressed", e.matches ? "true" : "false");
-      }
-    });
   }
 
   // ============================================================
@@ -51,22 +41,29 @@
   function initMobileMenu() {
     const hamburger = document.getElementById("nav-hamburger");
     const menu = document.getElementById("nav-menu");
+    const backdrop = document.getElementById("nav-backdrop");
     const links = menu ? menu.querySelectorAll(".nav__link") : [];
 
     if (!hamburger || !menu) return;
 
+    const setMenu = (open) => {
+      menu.classList.toggle("nav__menu--open", open);
+      document.body.classList.toggle("nav-menu-open", open);
+      if (backdrop) backdrop.classList.toggle("is-visible", open);
+      hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+
     hamburger.addEventListener("click", () => {
-      const isOpen = menu.classList.toggle("nav__menu--open");
-      hamburger.setAttribute("aria-expanded", isOpen ? "true" : "false");
-      document.body.style.overflow = isOpen ? "hidden" : "";
+      setMenu(!menu.classList.contains("nav__menu--open"));
     });
 
+    if (backdrop) {
+      backdrop.addEventListener("click", () => setMenu(false));
+    }
+
     links.forEach((link) => {
-      link.addEventListener("click", () => {
-        menu.classList.remove("nav__menu--open");
-        hamburger.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
-      });
+      link.addEventListener("click", () => setMenu(false));
     });
   }
 

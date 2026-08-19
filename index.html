@@ -41,8 +41,7 @@
     (function () {
       try {
         var saved = localStorage.getItem("Fleur-theme");
-        var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        var theme = saved ? saved : (systemDark ? "dark" : "light");
+        var theme = saved || "light";
         document.documentElement.setAttribute("data-theme", theme);
         document.documentElement.classList.add("js");
       } catch (e) {
@@ -258,7 +257,9 @@
       </div>
     </nav>
   </header>
-  
+
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
   <main id="main-content">
     <!-- Hero Section -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
@@ -316,7 +317,7 @@
             </div>
             <h3 class="service-card__title">Bikin Landing Page</h3>
             <p class="service-card__description">Satu halaman, fokus bikin pengunjung klik, daftar, atau beli.</p>
-            <p class="service-card__audience"><strong>Buat kamu yang lagi pasang iklan (Meta Ads/Google Ads) atau mau launching produk dan butuh halaman jualan yang meyakinkan.</strong></p>
+            <!-- <p class="service-card__audience"><strong>Buat kamu yang lagi pasang iklan (Meta Ads/Google Ads) atau mau launching produk dan butuh halaman jualan yang meyakinkan.</strong></p> -->
           </article>
           <article class="service-card service-card--featured reveal">
             <span class="service-card__tag">Paling Laris</span>
@@ -325,7 +326,7 @@
             </div> -->
             <h3 class="service-card__title">Website Company Profile</h3>
             <p class="service-card__description">Website beberapa halaman (Tentang Kami, Layanan, Portofolio, Kontak) biar bisnismu kelihatan profesional dan gampang dicari di Google.</p>
-            <p class="service-card__audience"><strong>Buat kamu yang mau bisnisnya dianggap serius sama calon klien, investor, atau calon partner kerja sama.</strong></p>
+            <!-- <p class="service-card__audience"><strong>Buat kamu yang mau bisnisnya dianggap serius sama calon klien, investor, atau calon partner kerja sama.</strong></p> -->
           </article>
           <article class="service-card reveal">
             <div class="service-card__icon" aria-hidden="true">
@@ -333,7 +334,7 @@
             </div>
             <h3 class="service-card__title">Toko Online</h3>
             <p class="service-card__description">Katalog produk + keranjang belanja + pembayaran langsung di website. Pelanggan checkout sendiri, kamu tinggal proses pesanan.</p>
-            <p class="service-card__audience"><strong>Buat kamu yang udah kewalahan balasin chat orderan satu-satu dan butuh sistem yang jalan otomatis.</strong></p>
+            <!-- <p class="service-card__audience"><strong>Buat kamu yang udah kewalahan balasin chat orderan satu-satu dan butuh sistem yang jalan otomatis.</strong></p> -->
           </article>
           <article class="service-card reveal">
             <div class="service-card__icon" aria-hidden="true">
@@ -341,15 +342,15 @@
             </div>
             <h3 class="service-card__title">Redesign Website Lama</h3>
             <p class="service-card__description">Website lama lemot, jadul, atau nggak pernah bawa hasil? Kami bedah dan rombak total jadi versi yang lebih ngebut dan kekinian.</p>
-            <p class="service-card__audience"><strong>Buat kamu yang udah punya website tapi malu nge share linknya ke calon pembeli.</strong></p>
+            <!-- <p class="service-card__audience"><strong>Buat kamu yang udah punya website tapi malu nge share linknya ke calon pembeli.</strong></p> -->
           </article>
           <article class="service-card reveal">
             <div class="service-card__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
             </div>
-            <h3 class="service-card__title">Maintenance &amp; Update Konten</h3>
+            <h3 class="service-card__title">Maintenance</h3>
             <p class="service-card__description">Langganan bulanan update konten, backup rutin, jaga keamanan, dan beresin error. Websitemu dirawat terus, bukan ditinggal pas udah jadi.</p>
-            <p class="service-card__audience"><strong>Buat kamu yang nggak mau pusing ngurus hal teknis dan pengen website selalu aman + update.</strong></p>
+            <!-- <p class="service-card__audience"><strong>Buat kamu yang nggak mau pusing ngurus hal teknis dan pengen website selalu aman + update.</strong></p> -->
           </article>
         </div>
       </div>
