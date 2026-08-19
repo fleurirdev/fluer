@@ -145,9 +145,6 @@
               } else {
                 entry.target.classList.add("reveal--visible");
               }
-              if (entry.target.classList.contains("process-card")) {
-                entry.target.classList.add("is-lit");
-              }
             }, delay);
             obs.unobserve(entry.target);
           }
@@ -166,9 +163,44 @@
     setTimeout(() => {
       revealElements.forEach((el) => {
         el.classList.add("reveal--visible", "reveal-left--visible", "reveal-right--visible");
-        if (el.classList.contains("process-card")) el.classList.add("is-lit");
       });
     }, 4000);
+  }
+
+  // ============================================================
+  // Process card spotlight — reached steps stay lit, current card in viewport is bright
+  // ============================================================
+  function initProcessCardLighting() {
+    const cards = document.querySelectorAll(".process-card");
+    if (!cards.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+      cards.forEach((card) => card.classList.add("is-lit"));
+      return;
+    }
+
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+
+    // mark cards already scrolled past the viewport center as reached (cumulative)
+    cards.forEach((card) => {
+      const r = card.getBoundingClientRect();
+      if (r.top + r.height / 2 < vh / 2) {
+        card.classList.add("is-lit");
+      }
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-lit"); // reached steps stay lit (opacity 1)
+          }
+        });
+      },
+      { rootMargin: "-50% 0px -50% 0px", threshold: 0 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
   }
 
   // ============================================================
@@ -226,11 +258,11 @@
     let ticking = false;
 
     function update() {
-      const rect = section.getBoundingClientRect();
+      const rect = grid.getBoundingClientRect();
       const vh = window.innerHeight || document.documentElement.clientHeight;
-      const total = rect.height + vh;
-      const seen = vh - rect.top;
-      let p = seen / total;
+      const center = vh / 2;
+      // progress anchored to the viewport center, not the bottom
+      let p = (center - rect.top) / rect.height;
       p = Math.max(0, Math.min(1, p));
       grid.style.setProperty("--timeline-progress", (p * 100).toFixed(2) + "%");
       ticking = false;
@@ -292,6 +324,7 @@
     initScrollspy();
     initHeaderScroll();
     initReveal();
+    initProcessCardLighting();
     initTimelineGlow();
     initFAQ();
     initFloatingWA();

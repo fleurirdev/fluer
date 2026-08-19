@@ -796,7 +796,7 @@ button {
   overflow: visible;
   width: calc(50% - 36px);
   z-index: 2;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base), opacity 0.35s ease;
 }
 
 /* Thin brand → secondary gradient border (preserves rounded corners) */
@@ -1603,6 +1603,15 @@ button {
 .js .reveal-right--visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* Process cards: dim when revealed, brighten when currently in viewport */
+.process-card.reveal--visible {
+  opacity: 0.5;
+}
+
+.process-card.reveal--visible.is-lit {
+  opacity: 1;
 }
 
 /* Stagger children */
