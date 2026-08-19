@@ -1,5 +1,5 @@
 /**
- * FleurCode — Main JavaScript
+ * Fleur — Main JavaScript
  * Menangani interaksi & animasi halaman (konten sudah statis di index.html).
  */
 
@@ -16,7 +16,7 @@
 
     // Default: system preference
     const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const savedTheme = localStorage.getItem("fleurcode-theme");
+    const savedTheme = localStorage.getItem("Fleur-theme");
     const isDark = savedTheme ? savedTheme === "dark" : systemDark;
 
     if (isDark) {
@@ -31,13 +31,13 @@
       const current = html.getAttribute("data-theme");
       const next = current === "dark" ? "light" : "dark";
       html.setAttribute("data-theme", next);
-      localStorage.setItem("fleurcode-theme", next);
+      localStorage.setItem("Fleur-theme", next);
       toggle.setAttribute("aria-pressed", next === "dark" ? "true" : "false");
     });
 
     // Listen to system changes if no saved preference
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-      if (!localStorage.getItem("fleurcode-theme")) {
+      if (!localStorage.getItem("Fleur-theme")) {
         const next = e.matches ? "dark" : "light";
         html.setAttribute("data-theme", next);
         toggle.setAttribute("aria-pressed", e.matches ? "true" : "false");

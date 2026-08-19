@@ -1,5 +1,5 @@
 /* ============================================================
-   FleurCode — Design System & Styles
+   Fleur — Design System & Styles
    Kategori: Bisnis/Jasa (Jasa Pembuatan Website)
    Palette: Indigo → Violet → Cyan (modern, premium)
    ============================================================ */
@@ -14,8 +14,8 @@
   --color-accent-light: #5E7480;
   --color-accent-dark: #0F1E26;
   --color-accent-soft: #E8E2DB;
-  --color-accent-2: #FE7F2D;
-  --color-accent-3: #FB9E5C;
+  --color-accent-2: #fe2d2d;
+  --color-accent-3: #fb645c;
   --text-accent: var(--color-accent);
 
   /* Gradient helpers (kept as solid fallbacks; no gradient on buttons/text) */
@@ -91,8 +91,8 @@
   --text-accent: var(--color-accent-light);
   --color-accent-dark: #1B3540;
   --color-accent-soft: #16262F;
-  --color-accent-2: #FE7F2D;
-  --color-accent-3: #FB9E5C;
+  --color-accent-2: #fe2d2d;
+  --color-accent-3: #fb645c;
 
   --gradient-accent: var(--color-accent);
   --gradient-text: var(--color-accent-2);
@@ -347,17 +347,13 @@ button {
   color: var(--text-primary);
 }
 
-.nav__logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav__logo-img {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-md);
-  background: var(--color-accent);
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  font-weight: 800;
+  object-fit: contain;
+  background: #FFFFFF;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.06));
 }
 
 .nav__menu {
@@ -480,7 +476,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding-top: 70px;
+  padding-top: 40px;
   padding-bottom: 0;
   background-color: var(--bg-primary);
   overflow: visible;
@@ -612,7 +608,7 @@ button {
 .hero__showcase {
   position: absolute;
   left: 50%;
-  bottom: -2rem;
+  bottom: -4rem;
   transform: translate(-50%, 50%);
   width: min(92vw, 960px);
   z-index: 3;
@@ -1035,7 +1031,7 @@ button {
 }
 
 .portfolio-card.is-center {
-  transform: scale(1.25);
+  transform: scale(1.2);
   opacity: 1;
   z-index: 2;
   margin-inline: clamp(-44px, -2vw, -24px);
@@ -1305,7 +1301,7 @@ button {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
+  gap: var(--space-8);
 }
 
 .faq__item {
@@ -1452,17 +1448,13 @@ button {
   margin-bottom: var(--space-16);
 }
 
-.footer__logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer__logo-img {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-md);
-  background: var(--color-accent);
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  font-weight: 800;
+  object-fit: contain;
+  background: #FFFFFF;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.06));
 }
 
 .footer__brand p {
@@ -1739,13 +1731,14 @@ button {
 
   .hero {
     min-height: auto;
-    padding-top: 96px;
+    padding-top: 50px;
     padding-bottom: var(--space-48);
 
   }
 
   .hero__title {
     font-size: clamp(28px, 8vw, 40px);
+    line-height: 2.5rem;
   }
 
   .hero__cta {
@@ -1829,6 +1822,10 @@ button {
   .pricing-card--featured:hover {
     transform: translateY(-4px);
   }
+
+  .faq__list {
+  gap: var(--space-4);
+}
 
   .footer__grid {
     grid-template-columns: 1fr;
