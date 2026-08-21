@@ -48,7 +48,7 @@
 - Tombol "Lihat Selengkapnya" per project (link ke masing-masing landing page)
 
 ### 6. Paket Harga
-- Starter: 1 halaman (landing page), [ISI fitur], mulai Rp 499.000
+- Starter: 1 halaman (landing page), [ISI fitur], mulai Rp 800.000
 - Business: Multi-halaman (company profile), [rekomendasikan fitur], mulai Rp 1.800.000
 - Custom: Kebutuhan khusus (e-commerce/sistem tambahan), harga by request
 *(harga placeholder — isi sesuai penawaran aktual kamu; sertakan estimasi waktu pengerjaan tiap paket)*
