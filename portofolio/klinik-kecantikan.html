@@ -16,6 +16,11 @@
   <meta name="author" content="Fleur">
   <link rel="canonical" href="https://Fleur.id/portofolio/klinik-kecantikan">
 
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="id" href="https://Fleur.id/portofolio/klinik-kecantikan" />
+  <link rel="alternate" hreflang="en" href="https://Fleur.id/en/portofolio/klinik-kecantikan" />
+  <link rel="alternate" hreflang="x-default" href="https://Fleur.id/portofolio/klinik-kecantikan" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://Fleur.id/portofolio/klinik-kecantikan">
@@ -73,6 +78,13 @@
 </head>
 
 <body>
+  <!-- Smart Language Banner (auto-suggest by browser locale; no auto-redirect, SEO-safe) -->
+  <div id="lang-banner" class="lang-banner" role="status" aria-live="polite" hidden>
+    <span class="lang-banner__text" id="lang-banner-text"></span>
+    <a href="#" class="lang-banner__link" id="lang-banner-link"></a>
+    <button type="button" class="lang-banner__close" id="lang-banner-close" aria-label="Tutup">&times;</button>
+  </div>
+
   <!-- Navbar -->
   <header class="header" id="header">
     <nav class="nav container" aria-label="Navigasi utama">
@@ -101,6 +113,7 @@
       </div>
 
       <div class="nav__actions">
+        <a href="../en/portofolio/klinik-kecantikan.html" class="lang-switcher" aria-label="Switch to English" title="English">EN</a>
         <button class="theme-toggle" id="theme-toggle" aria-label="Ganti tema" aria-pressed="false" type="button">
           <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -249,6 +262,65 @@
   </a>
 
   <script src="../js/main.js"></script>
+  <!-- Language: auto-suggest by browser locale; navbar switch hidden from users
+       (kept in HTML for crawlers). No redirect -> SEO-safe. -->
+  <script>
+  (function () {
+    var banner = document.getElementById('lang-banner');
+    var text = document.getElementById('lang-banner-text');
+    var link = document.getElementById('lang-banner-link');
+    var switcher = document.querySelector('.lang-switcher');
+    // Hide persistent navbar switch from end-users; crawlers still see the link in HTML.
+    if (switcher) switcher.classList.add('is-hidden');
+    if (!banner || !text || !link) return;
+
+    var path = location.pathname;
+    var isEN = /\/en\//.test(path) || /(^|\/)en$/.test(path) || /\/en\/index\.html$/.test(path);
+
+    // Manual override via ?lang= matching current page -> respect choice, don't nag.
+    var forced = (new URLSearchParams(location.search)).get('lang');
+    if ((forced === 'en' && isEN) || (forced === 'id' && !isEN)) {
+      try { localStorage.setItem('fleur-lang-banner', '1'); } catch (e) {}
+      return;
+    }
+
+    var dismissed = false;
+    try { dismissed = localStorage.getItem('fleur-lang-banner') === '1'; } catch (e) {}
+    if (dismissed) return;
+
+    var lang = navigator.language || navigator.userLanguage || '';
+    var isIdUser = /^id/i.test(lang);
+    if (!switcher) return;
+    var target = switcher.getAttribute('href');
+
+    if (isEN && isIdUser) {
+      text.textContent = 'Sepertinya Anda berbahasa Indonesia. ';
+      link.textContent = 'Lihat versi Bahasa Indonesia →';
+      link.setAttribute('href', target + '?lang=id');
+      banner.hidden = false;
+    } else if (!isEN && !isIdUser) {
+      text.textContent = 'Looks like you prefer English. ';
+      link.textContent = 'View English version →';
+      link.setAttribute('href', target + '?lang=en');
+      banner.hidden = false;
+    }
+
+    link.addEventListener('click', function () {
+      try {
+        localStorage.setItem('fleur-lang-banner', '1');
+        localStorage.setItem('fleur-lang-pref', isEN ? 'id' : 'en');
+      } catch (e) {}
+    });
+
+    var close = document.getElementById('lang-banner-close');
+    if (close) {
+      close.addEventListener('click', function () {
+        banner.hidden = true;
+        try { localStorage.setItem('fleur-lang-banner', '1'); } catch (e) {}
+      });
+    }
+  })();
+  </script>
 </body>
 
 </html>
