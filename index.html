@@ -14,20 +14,20 @@
     content="jasa pembuatan website, jasa buat website, jasa bikin website, jasa website, jasa pembuatan website profesional, bikin website murah, website murah, jasa bikin landing page, jasa website UMKM, harga bikin website, jasa redesign website, jasa website toko online, bikin website untuk bisnis, jasa pembuatan website Medan">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Fleur">
-  <link rel="canonical" href="https://Fleur.id/jasa-pembuatan-website">
+  <link rel="canonical" href="https://fleur.id/jasa-pembuatan-website">
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="id" href="https://Fleur.id/jasa-pembuatan-website" />
-  <link rel="alternate" hreflang="en" href="https://Fleur.id/en/" />
-  <link rel="alternate" hreflang="x-default" href="https://Fleur.id/jasa-pembuatan-website" />
+  <link rel="alternate" hreflang="id" href="https://fleur.id/jasa-pembuatan-website" />
+  <link rel="alternate" hreflang="en" href="https://fleur.id/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://fleur.id/jasa-pembuatan-website" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://Fleur.id/jasa-pembuatan-website">
+  <meta property="og:url" content="https://fleur.id/jasa-pembuatan-website">
   <meta property="og:title" content="Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur">
   <meta property="og:description"
     content="Jasa pembuatan website profesional &amp; terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat &amp; SEO friendly.">
-  <meta property="og:image" content="https://Fleur.id/assets/og-image.jpg">
+  <meta property="og:image" content="https://fleur.id/assets/og-image.jpg">
   <meta property="og:locale" content="id_ID">
   <meta property="og:site_name" content="Fleur">
 
@@ -36,13 +36,17 @@
   <meta name="twitter:title" content="Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur">
   <meta name="twitter:description"
     content="Jasa pembuatan website profesional &amp; terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat &amp; SEO friendly.">
-  <meta name="twitter:image" content="https://Fleur.id/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://fleur.id/assets/og-image.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" as="image" href="assets/skin-clinic-sample.webp" type="image/webp">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -71,11 +75,11 @@
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://Fleur.id/jasa-pembuatan-website",
+        "@id": "https://fleur.id/jasa-pembuatan-website",
         "name": "Fleur",
         "description": "Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.",
-        "url": "https://Fleur.id/jasa-pembuatan-website",
-        "telephone": "+628XXXXXXXXX",
+        "url": "https://fleur.id/jasa-pembuatan-website",
+        "telephone": "+6281234567890",
         "email": "fleurirdev@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -89,26 +93,75 @@
         "priceRange": "Rp"
       },
       {
+        "@type": "WebSite",
+        "@id": "https://fleur.id/#website",
+        "url": "https://fleur.id/",
+        "name": "Fleur",
+        "description": "Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.",
+        "publisher": { "@id": "https://fleur.id/jasa-pembuatan-website" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://fleur.id/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fleur.id/#localbusiness",
+        "name": "Fleur",
+        "description": "Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.",
+        "url": "https://fleur.id/jasa-pembuatan-website",
+        "telephone": "+6281234567890",
+        "email": "fleurirdev@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Medan",
+          "addressRegion": "Sumatera Utara",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 3.5952,
+          "longitude": 98.6722
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Indonesia"
+        },
+        "priceRange": "Rp",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Beranda",
-            "item": "https://Fleur.id/"
+            "item": "https://fleur.id/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Jasa Pembuatan Website",
-            "item": "https://Fleur.id/jasa-pembuatan-website"
+            "item": "https://fleur.id/jasa-pembuatan-website"
           }
         ]
       },
       {
         "@type": "Service",
         "serviceType": "Jasa Bikin Landing Page",
-        "provider": { "@id": "https://Fleur.id/jasa-pembuatan-website" },
+        "provider": { "@id": "https://fleur.id/jasa-pembuatan-website" },
         "areaServed": { "@type": "Country", "name": "Indonesia" },
         "name": "Jasa Bikin Landing Page",
         "description": "Satu halaman fokus jualan yang bikin pengunjung klik, daftar, atau beli."
@@ -116,7 +169,7 @@
       {
         "@type": "Service",
         "serviceType": "Website Company Profile",
-        "provider": { "@id": "https://Fleur.id/jasa-pembuatan-website" },
+        "provider": { "@id": "https://fleur.id/jasa-pembuatan-website" },
         "areaServed": { "@type": "Country", "name": "Indonesia" },
         "name": "Website Company Profile",
         "description": "Website beberapa halaman biar bisnismu kelihatan profesional dan gampang dicari di Google."
@@ -124,7 +177,7 @@
       {
         "@type": "Service",
         "serviceType": "Toko Online",
-        "provider": { "@id": "https://Fleur.id/jasa-pembuatan-website" },
+        "provider": { "@id": "https://fleur.id/jasa-pembuatan-website" },
         "areaServed": { "@type": "Country", "name": "Indonesia" },
         "name": "Toko Online",
         "description": "Katalog produk, keranjang belanja, dan pembayaran langsung di website."
@@ -132,7 +185,7 @@
       {
         "@type": "Service",
         "serviceType": "Redesign Website Lama",
-        "provider": { "@id": "https://Fleur.id/jasa-pembuatan-website" },
+        "provider": { "@id": "https://fleur.id/jasa-pembuatan-website" },
         "areaServed": { "@type": "Country", "name": "Indonesia" },
         "name": "Redesign Website Lama",
         "description": "Rombak total website lama jadi versi lebih ngebut dan kekinian."
@@ -140,7 +193,7 @@
       {
         "@type": "Service",
         "serviceType": "Maintenance & Update Konten",
-        "provider": { "@id": "https://Fleur.id/jasa-pembuatan-website" },
+        "provider": { "@id": "https://fleur.id/jasa-pembuatan-website" },
         "areaServed": { "@type": "Country", "name": "Indonesia" },
         "name": "Maintenance & Update Konten",
         "description": "Langganan bulanan update konten, backup rutin, dan jaga keamanan website."
@@ -228,7 +281,7 @@
   </div>
 
   <!-- Skip to content for accessibility -->
-  <!-- <a href="#main-content" class="skip-link">Langsung ke konten</a> -->
+  <a href="#main-content" class="skip-link">Langsung ke konten</a>
 
   <!-- Navbar -->
   <header class="header" id="header">
@@ -297,7 +350,7 @@
             pelanggan, bikin bisnismu makin laris. Bukan cuma pajangan doang.</p>
           <div class="hero__cta">
             <a href="#harga" class="btn btn--primary" id="hero-cta-primary">Cek Harga Mulai Rp 800.000</a>
-            <a href="https://wa.me/628XXXXXXXXX?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
+            <a href="https://wa.me/6281234567890?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
               class="btn btn--secondary" id="hero-cta-secondary" target="_blank" rel="noopener noreferrer">Konsultasi
               Gratis via WhatsApp</a>
           </div>
@@ -326,7 +379,7 @@
         <div class="hero__showcase-track" id="hero-showcase-track">
           <a class="showcase-card" href="#portofolio" aria-label="Self Order">
             <img src="assets/skin-clinic-sample.webp"
-              alt="Portofolio sistem self order QRIS untuk restoran - jasa pembuatan website Fleur" loading="lazy">
+              alt="Portofolio sistem self order QRIS untuk restoran - jasa pembuatan website Fleur" loading="eager" width="960" height="540">
           </a>
         </div>
       </div>
@@ -962,7 +1015,7 @@
           <p class="cta__description" id="cta-description">Ceritain aja dulu konsultasinya gratis, nggak ada kewajiban
             order. Bilang aja bisnismu apa, kami bantu rekomendasiin website yang paling cocok plus estimasi biayanya.
             Fleur berbasis di Medan, melayani UMKM &amp; bisnis di seluruh Indonesia.</p>
-          <a href="https://wa.me/628XXXXXXXXX?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
+          <a href="https://wa.me/6281234567890?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
             class="btn btn--primary btn--large" id="cta-button" target="_blank" rel="noopener noreferrer">Chat Kami di
             WhatsApp</a>
           <!-- <p class="cta__note" id="cta-note">Fast respon jam kerja (Senin–Sabtu, 09.00–18.00 WIB)</p> -->
@@ -987,11 +1040,11 @@
         <div class="footer__contact reveal">
           <h3>Kontak</h3>
           <ul>
-            <li>
+            <!-- <li>
               <span>WhatsApp:</span>
-              <a href="https://wa.me/628XXXXXXXXX?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
-                id="footer-wa" target="_blank" rel="noopener noreferrer">+62 8XXXXXXXXX</a>
-            </li>
+              <a href="https://wa.me/6281234567890?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
+                id="footer-wa" target="_blank" rel="noopener noreferrer">+62 81234567890</a>
+            </li> -->
             <li>
               <span>Email:</span>
               <a href="mailto:fleurirdev@gmail.com" id="footer-email">fleurirdev@gmail.com</a>
@@ -1027,7 +1080,7 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/628XXXXXXXXX?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
+  <a href="https://wa.me/6281234567890?text=Halo%20Fleur%2C%20saya%20mau%20konsultasi%20bikin%20website."
     class="floating-wa" id="floating-wa" aria-label="Chat WhatsApp" target="_blank" rel="noopener noreferrer">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path

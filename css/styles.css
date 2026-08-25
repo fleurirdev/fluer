@@ -2154,7 +2154,7 @@ button {
 .project-detail__subheading {
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 500;
-  color: var(--color-accent);
+  color: var(--text-accent);
   margin-bottom: var(--space-12, 3rem);
 }
 

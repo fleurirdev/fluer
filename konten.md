@@ -6,14 +6,14 @@
 - **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
 - **Keywords:** jasa pembuatan website, jasa buat website, jasa bikin website, jasa website, jasa pembuatan website profesional, bikin website murah, website murah, jasa bikin landing page, jasa website UMKM, harga bikin website, jasa redesign website, jasa website toko online, bikin website untuk bisnis, jasa pembuatan website Medan
 - **Author:** Fleur
-- **Canonical:** https://Fleur.id/jasa-pembuatan-website
+- **Canonical:** https://fleur.id/jasa-pembuatan-website
 
 ### Open Graph
 
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
 - **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
-- **URL:** https://Fleur.id/jasa-pembuatan-website
-- **Image:** https://Fleur.id/assets/og-image.jpg
+- **URL:** https://fleur.id/jasa-pembuatan-website
+- **Image:** https://fleur.id/assets/og-image.jpg
 - **Locale:** id_ID
 - **Site Name:** Fleur
 
@@ -22,7 +22,7 @@
 - **Card:** summary_large_image
 - **Title:** Jasa Pembuatan Website Profesional, Harga Masuk Akal | Fleur
 - **Description:** Jasa pembuatan website profesional & terjangkau di Medan — landing page, company profile, sampai toko online. Mulai Rp 800.000, gratis konsultasi. Cepat & SEO friendly.
-- **Image:** https://Fleur.id/assets/og-image.jpg
+- **Image:** https://fleur.id/assets/og-image.jpg
 
 ---
 
@@ -212,7 +212,7 @@ A: Template website murah emang kelihatan cepat, tapi sering lemot, nggak nyambu
 **Lokasi:** 📍 Medan, Indonesia
 
 **Kontak**
-- WhatsApp: +62 8XXXXXXXXX
+- WhatsApp: +62 81234567890
 - Email: fleurirdev@gmail.com
 
 **Menu**

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Tidak Ditemukan — 404 | Fleur</title>
+  <meta name="description" content="Halaman yang Anda cari tidak ditemukan. Kembali ke beranda Fleur untuk melihat layanan jasa pembuatan website profesional.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://fleur.id/404.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-32);
+    }
+    .error-page__code {
+      font-size: clamp(80px, 15vw, 160px);
+      font-weight: 800;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: var(--space-16);
+      opacity: 0.25;
+    }
+    .error-page__title {
+      font-size: clamp(24px, 4vw, 36px);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: var(--space-12);
+    }
+    .error-page__desc {
+      font-size: clamp(16px, 2vw, 18px);
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin-bottom: var(--space-32);
+      line-height: 1.6;
+    }
+    .error-page__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-16);
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Langsung ke konten</a>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="index.html" class="nav__logo" aria-label="Fleur beranda">
+        <img src="assets/logo.svg" class="nav__logo-img" alt="Fleur" width="36" height="36">
+        <span class="nav__logo-text">Fleur</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="error-page">
+    <div class="error-page__code" aria-hidden="true">404</div>
+    <h1 class="error-page__title">Halaman Tidak Ditemukan</h1>
+    <p class="error-page__desc">Sepertinya halaman yang Anda cari sudah dipindahkan, dihapus, atau mungkin URL-nya salah. Yuk kembali ke beranda.</p>
+    <div class="error-page__actions">
+      <a href="index.html" class="btn btn--primary">Kembali ke Beranda</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Fleur%2C%20saya%20butuh%20bantuan.%20Halaman%20yang%20saya%20cari%20tidak%20ditemukan." class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Hubungi Kami</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:none;padding-top:var(--space-32);">
+        <p>© 2026 Fleur. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

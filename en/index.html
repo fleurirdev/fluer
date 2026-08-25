@@ -14,20 +14,20 @@
     content="custom website development, small business web design, affordable website services, professional website design, landing page design, company profile website, ecommerce website development, website redesign services, website maintenance services, freelance web developer Indonesia, cheap website design, fast website development, SEO friendly website">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Fleur">
-  <link rel="canonical" href="https://Fleur.id/en/">
+  <link rel="canonical" href="https://fleur.id/en/">
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="id" href="https://Fleur.id/jasa-pembuatan-website" />
-  <link rel="alternate" hreflang="en" href="https://Fleur.id/en/" />
-  <link rel="alternate" hreflang="x-default" href="https://Fleur.id/jasa-pembuatan-website" />
+  <link rel="alternate" hreflang="id" href="https://fleur.id/jasa-pembuatan-website" />
+  <link rel="alternate" hreflang="en" href="https://fleur.id/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://fleur.id/jasa-pembuatan-website" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://Fleur.id/en/">
+  <meta property="og:url" content="https://fleur.id/en/">
   <meta property="og:title" content="Professional Website Development Services for Small Business | Fleur">
   <meta property="og:description"
     content="Affordable custom website development for small businesses &amp; professionals — landing pages, company profiles &amp; online stores. Fast turnaround, SEO-friendly, free consultation. Based in Indonesia, serving clients worldwide.">
-  <meta property="og:image" content="https://Fleur.id/assets/og-image.jpg">
+  <meta property="og:image" content="https://fleur.id/assets/og-image.jpg">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Fleur">
 
@@ -36,13 +36,17 @@
   <meta name="twitter:title" content="Professional Website Development Services for Small Business | Fleur">
   <meta name="twitter:description"
     content="Affordable custom website development for small businesses &amp; professionals — landing pages, company profiles &amp; online stores. Fast turnaround, SEO-friendly, free consultation. Based in Indonesia, serving clients worldwide.">
-  <meta name="twitter:image" content="https://Fleur.id/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://fleur.id/assets/og-image.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="../css/styles.css" as="style">
+  <link rel="preload" as="image" href="../assets/skin-clinic-sample.webp" type="image/webp">
 
   <!-- Styles -->
   <link rel="stylesheet" href="../css/styles.css">
@@ -71,11 +75,11 @@
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://Fleur.id/en/",
+        "@id": "https://fleur.id/en/",
         "name": "Fleur",
         "description": "Affordable custom website development for small businesses & professionals — landing pages, company profiles & online stores. Fast turnaround, SEO-friendly, free consultation. Based in Indonesia, serving clients worldwide.",
-        "url": "https://Fleur.id/en/",
-        "telephone": "+628XXXXXXXXX",
+        "url": "https://fleur.id/en/",
+        "telephone": "+6281234567890",
         "email": "fleurirdev@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -89,20 +93,69 @@
         "priceRange": "$$"
       },
       {
+        "@type": "WebSite",
+        "@id": "https://fleur.id/#website",
+        "url": "https://fleur.id/",
+        "name": "Fleur",
+        "description": "Affordable custom website development for small businesses & professionals — landing pages, company profiles & online stores. Fast turnaround, SEO-friendly, free consultation. Based in Indonesia, serving clients worldwide.",
+        "publisher": { "@id": "https://fleur.id/en/" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://fleur.id/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://fleur.id/#localbusiness",
+        "name": "Fleur",
+        "description": "Affordable custom website development for small businesses & professionals — landing pages, company profiles & online stores. Fast turnaround, SEO-friendly, free consultation. Based in Indonesia, serving clients worldwide.",
+        "url": "https://fleur.id/en/",
+        "telephone": "+6281234567890",
+        "email": "fleurirdev@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Medan",
+          "addressRegion": "Sumatera Utara",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 3.5952,
+          "longitude": 98.6722
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Global"
+        },
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://Fleur.id/en/"
+            "item": "https://fleur.id/en/"
           }
         ]
       },
       {
         "@type": "Service",
         "serviceType": "Custom Landing Page Design",
-        "provider": { "@id": "https://Fleur.id/en/" },
+        "provider": { "@id": "https://fleur.id/en/" },
         "areaServed": { "@type": "Place", "name": "Global" },
         "name": "Custom Landing Page Design",
         "description": "A single high-converting page designed to turn visitors into leads or buyers."
@@ -110,7 +163,7 @@
       {
         "@type": "Service",
         "serviceType": "Company Profile Website",
-        "provider": { "@id": "https://Fleur.id/en/" },
+        "provider": { "@id": "https://fleur.id/en/" },
         "areaServed": { "@type": "Place", "name": "Global" },
         "name": "Company Profile Website",
         "description": "A multi-page professional website that builds credibility and ranks on Google."
@@ -118,7 +171,7 @@
       {
         "@type": "Service",
         "serviceType": "Online Store Development",
-        "provider": { "@id": "https://Fleur.id/en/" },
+        "provider": { "@id": "https://fleur.id/en/" },
         "areaServed": { "@type": "Place", "name": "Global" },
         "name": "Online Store Development",
         "description": "Product catalog, shopping cart, and integrated payment on your own website."
@@ -126,7 +179,7 @@
       {
         "@type": "Service",
         "serviceType": "Website Redesign",
-        "provider": { "@id": "https://Fleur.id/en/" },
+        "provider": { "@id": "https://fleur.id/en/" },
         "areaServed": { "@type": "Place", "name": "Global" },
         "name": "Website Redesign",
         "description": "Rebuild your outdated website into a fast, modern, high-performing version."
@@ -134,7 +187,7 @@
       {
         "@type": "Service",
         "serviceType": "Website Maintenance",
-        "provider": { "@id": "https://Fleur.id/en/" },
+        "provider": { "@id": "https://fleur.id/en/" },
         "areaServed": { "@type": "Place", "name": "Global" },
         "name": "Website Maintenance",
         "description": "Monthly content updates, regular backups, security monitoring, and bug fixes."
@@ -222,7 +275,7 @@
   </div>
 
   <!-- Skip to content for accessibility -->
-  <!-- <a href="#main-content" class="skip-link">Skip to content</a> -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- Navbar -->
   <header class="header" id="header">
@@ -286,7 +339,7 @@
           <p class="hero__subtitle" id="hero-subtitle">Fast, beautiful websites that actually bring in customers — not just sit there looking pretty. We design for results.</p>
           <div class="hero__cta">
             <a href="#pricing" class="btn btn--primary" id="hero-cta-primary">See Pricing — From ~$149 USD</a>
-            <a href="https://wa.me/628XXXXXXXXX?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
+            <a href="https://wa.me/6281234567890?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
               class="btn btn--secondary" id="hero-cta-secondary" target="_blank" rel="noopener noreferrer">Free Consultation on WhatsApp</a>
           </div>
           <div class="hero__stats" id="hero-stats">
@@ -310,7 +363,7 @@
         <div class="hero__showcase-track" id="hero-showcase-track">
           <a class="showcase-card" href="#portfolio" aria-label="Self Order">
             <img src="../assets/skin-clinic-sample.webp"
-              alt="Portfolio QRIS self-order system for restaurant — Fleur web development" loading="lazy">
+              alt="Portfolio QRIS self-order system for restaurant — Fleur web development" loading="eager" width="960" height="540">
           </a>
         </div>
       </div>
@@ -862,7 +915,7 @@
         <div class="cta__card reveal">
           <h2 class="cta__title" id="cta-title">Got a Business Idea? Or Need to Upgrade Your Old Site?</h2>
           <p class="cta__description" id="cta-description">Just share your story — the consultation is free and there's no obligation to order. Tell us what you do, and we'll recommend the right website type plus a cost estimate. Fleur is based in Medan, Indonesia, serving clients worldwide.</p>
-          <a href="https://wa.me/628XXXXXXXXX?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
+          <a href="https://wa.me/6281234567890?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
             class="btn btn--primary btn--large" id="cta-button" target="_blank" rel="noopener noreferrer">Chat Us on WhatsApp</a>
         </div>
       </div>
@@ -885,11 +938,11 @@
         <div class="footer__contact reveal">
           <h3>Contact</h3>
           <ul>
-            <li>
+            <!-- <li>
               <span>WhatsApp:</span>
-              <a href="https://wa.me/628XXXXXXXXX?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
-                id="footer-wa" target="_blank" rel="noopener noreferrer">+62 8XXXXXXXXX</a>
-            </li>
+              <a href="https://wa.me/6281234567890?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
+                id="footer-wa" target="_blank" rel="noopener noreferrer">+62 81234567890</a>
+            </li> -->
             <li>
               <span>Email:</span>
               <a href="mailto:fleurirdev@gmail.com" id="footer-email">fleurirdev@gmail.com</a>
@@ -925,7 +978,7 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/628XXXXXXXXX?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
+  <a href="https://wa.me/6281234567890?text=Hi%20Fleur%2C%20I%27d%20like%20a%20free%20consultation%20about%20my%20website."
     class="floating-wa" id="floating-wa" aria-label="Chat WhatsApp" target="_blank" rel="noopener noreferrer">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path
