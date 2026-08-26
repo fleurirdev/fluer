@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fleur.id/sitemap.xml
-Sitemap: https://fleur.id/image-sitemap.xml
+Sitemap: https://fleurirdev.com/sitemap.xml
+Sitemap: https://fleurirdev.com/image-sitemap.xml

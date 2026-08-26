@@ -2,110 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://fleur.id/</loc>
+    <loc>https://fleurirdev.com/</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/skin-clinic-sample.webp</image:loc>
-      <image:title>Portofolio Sistem Self Order QRIS Restoran — Fleur</image:title>
+      <image:loc>https://fleurirdev.com/assets/skin-clinic-sample.webp</image:loc>
+      <image:title>Website Company Profile Klinik Kecantikan — Fleur</image:title>
       <image:caption>Contoh website company profile klinik kecantikan hasil jasa pembuatan website Fleur</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fleur.id/assets/og-image.jpg</image:loc>
+      <image:loc>https://fleurirdev.com/assets/logo.svg</image:loc>
       <image:title>Fleur — Jasa Pembuatan Website Profesional</image:title>
       <image:caption>Jasa pembuatan website profesional &amp; terjangkau di Medan</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/jasa-pembuatan-website</loc>
+    <loc>https://fleurirdev.com/jasa-pembuatan-website</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/skin-clinic-sample.webp</image:loc>
-      <image:title>Portofolio Sistem Self Order QRIS Restoran — Fleur</image:title>
-      <image:caption>Contoh website company profile klinik kecantikan hasil jasa pembuatan website Fleur</image:caption>
+      <image:loc>https://fleurirdev.com/assets/logo.svg</image:loc>
+      <image:title>Fleur — Jasa Pembuatan Website Profesional</image:title>
+      <image:caption>Jasa pembuatan website profesional &amp; terjangkau di Medan</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/travelku</loc>
+    <loc>https://fleurirdev.com/portofolio/travelku</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/umroh-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/umroh-sample.webp</image:loc>
       <image:title>Website Company Profile Travel Umroh Travelku — Fleur</image:title>
       <image:caption>Portofolio website travel umroh profesional hasil jasa pembuatan website Fleur</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/klinik-kecantikan</loc>
+    <loc>https://fleurirdev.com/portofolio/klinik-kecantikan</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/skin-clinic-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/skin-clinic-sample.webp</image:loc>
       <image:title>Website Company Profile Klinik Kecantikan — Fleur</image:title>
       <image:caption>Portofolio website klinik kecantikan profesional hasil jasa pembuatan website Fleur</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/gym-zahra</loc>
+    <loc>https://fleurirdev.com/portofolio/gym-zahra</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/gym-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/gym-sample.webp</image:loc>
       <image:title>Website Gym &amp; Olahraga Zahra Gym — Fleur</image:title>
       <image:caption>Portofolio website gym dan olahraga hasil jasa pembuatan website Fleur</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/self-order-qris</loc>
+    <loc>https://fleurirdev.com/portofolio/self-order-qris</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/self-order-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/self-order-sample.webp</image:loc>
       <image:title>Sistem Self Order QRIS Restoran — Fleur</image:title>
       <image:caption>Portofolio sistem self order QRIS untuk restoran hasil jasa pembuatan website Fleur</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/rumah-impian</loc>
+    <loc>https://fleurirdev.com/portofolio/rumah-impian</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/property-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/property-sample.webp</image:loc>
       <image:title>Website Properti Rumah Impian KPR — Fleur</image:title>
       <image:caption>Portofolio website properti dan KPR hasil jasa pembuatan website Fleur</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/en/</loc>
+    <loc>https://fleurirdev.com/en/</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/skin-clinic-sample.webp</image:loc>
-      <image:title>Portfolio QRIS Self-Order System for Restaurant — Fleur</image:title>
+      <image:loc>https://fleurirdev.com/assets/skin-clinic-sample.webp</image:loc>
+      <image:title>Beauty Clinic Company Profile Website — Fleur</image:title>
       <image:caption>Example beauty clinic company profile website by Fleur web development</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fleurirdev.com/assets/logo.svg</image:loc>
+      <image:title>Fleur — Professional Web Development Services</image:title>
+      <image:caption>Professional &amp; affordable web development services in Medan</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/travelku</loc>
+    <loc>https://fleurirdev.com/en/portofolio/travelku</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/umroh-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/umroh-sample.webp</image:loc>
       <image:title>Travel Umroh Company Profile Website Travelku — Fleur</image:title>
       <image:caption>Portfolio travel agency website by Fleur web development</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/klinik-kecantikan</loc>
+    <loc>https://fleurirdev.com/en/portofolio/klinik-kecantikan</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/skin-clinic-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/skin-clinic-sample.webp</image:loc>
       <image:title>Beauty Clinic Company Profile Website — Fleur</image:title>
       <image:caption>Portfolio beauty clinic website by Fleur web development</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/gym-zahra</loc>
+    <loc>https://fleurirdev.com/en/portofolio/gym-zahra</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/gym-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/gym-sample.webp</image:loc>
       <image:title>Gym &amp; Fitness Website Zahra Gym — Fleur</image:title>
       <image:caption>Portfolio gym and fitness website by Fleur web development</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/self-order-qris</loc>
+    <loc>https://fleurirdev.com/en/portofolio/self-order-qris</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/self-order-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/self-order-sample.webp</image:loc>
       <image:title>QRIS Self-Order System for Restaurant — Fleur</image:title>
       <image:caption>Portfolio QRIS self-order system by Fleur web development</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/rumah-impian</loc>
+    <loc>https://fleurirdev.com/en/portofolio/rumah-impian</loc>
     <image:image>
-      <image:loc>https://fleur.id/assets/property-sample.webp</image:loc>
+      <image:loc>https://fleurirdev.com/assets/property-sample.webp</image:loc>
       <image:title>Property Website Rumah Impian KPR — Fleur</image:title>
       <image:caption>Portfolio property and KPR website by Fleur web development</image:caption>
     </image:image>

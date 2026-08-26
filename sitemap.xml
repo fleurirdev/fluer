@@ -1,81 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Indonesian pages -->
   <url>
-    <loc>https://fleur.id/</loc>
+    <loc>https://fleurirdev.com/</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://fleurirdev.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fleurirdev.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fleurirdev.com/" />
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fleur.id/jasa-pembuatan-website</loc>
+    <loc>https://fleurirdev.com/jasa-pembuatan-website</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/travelku</loc>
+    <loc>https://fleurirdev.com/portofolio/travelku</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/klinik-kecantikan</loc>
+    <loc>https://fleurirdev.com/portofolio/klinik-kecantikan</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/gym-zahra</loc>
+    <loc>https://fleurirdev.com/portofolio/gym-zahra</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/self-order-qris</loc>
+    <loc>https://fleurirdev.com/portofolio/self-order-qris</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/portofolio/rumah-impian</loc>
+    <loc>https://fleurirdev.com/portofolio/rumah-impian</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- English pages -->
   <url>
-    <loc>https://fleur.id/en/</loc>
+    <loc>https://fleurirdev.com/en/</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/travelku</loc>
+    <loc>https://fleurirdev.com/en/portofolio/travelku</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/klinik-kecantikan</loc>
+    <loc>https://fleurirdev.com/en/portofolio/klinik-kecantikan</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/gym-zahra</loc>
+    <loc>https://fleurirdev.com/en/portofolio/gym-zahra</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/self-order-qris</loc>
+    <loc>https://fleurirdev.com/en/portofolio/self-order-qris</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fleur.id/en/portofolio/rumah-impian</loc>
+    <loc>https://fleurirdev.com/en/portofolio/rumah-impian</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
