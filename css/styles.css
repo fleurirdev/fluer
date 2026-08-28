@@ -2145,7 +2145,8 @@ button {
 }
 
 .project-detail__heading {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-top: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: var(--space-4, 1rem);
@@ -2153,26 +2154,136 @@ button {
 }
 
 .project-detail__subheading {
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
   font-weight: 500;
   color: var(--text-accent);
   margin-bottom: var(--space-12, 3rem);
 }
 
 .project-detail__body {
-  max-width: 70ch;
-  font-size: clamp(1rem, 1.6vw, 1.125rem);
-  line-height: 1.8;
-  text-align: justify;
+
+  margin-inline: auto;
+  font-size: clamp(1.02rem, 1.5vw, 1.15rem);
+  line-height: 1.85;
+  text-align: left;
+  text-wrap: pretty;
   color: var(--text-secondary, #4b5563);
 }
 
+.project-detail__body p {
+  margin-top: var(--space-5, 1.25rem);
+}
+
 .project-detail__body p+p {
-  margin-top: var(--space-6, 1.5rem);
+  margin-top: var(--space-5, 1.25rem);
+}
+
+.project-detail__body .lead {
+  font-size: clamp(1.18rem, 2.2vw, 1.45rem);
+  line-height: 1.6;
+  color: var(--text-primary, #233D4D);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: var(--space-8, 2rem);
+  text-wrap: balance;
+}
+
+.project-detail__body h2 {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--text-accent, #16a374);
+  margin-top: var(--space-10, 2.5rem);
+  margin-bottom: var(--space-4, 1rem);
+  scroll-margin-top: 120px;
+  text-wrap: balance;
+}
+
+.project-detail__body a {
+  color: var(--color-accent-2, #16a374);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-detail__body a:hover {
+  color: var(--color-accent, #0ea5a4);
+}
+
+.project-detail__quote {
+  margin: var(--space-12, 3rem) 0;
+  padding: var(--space-6, 1.5rem) var(--space-8, 2rem);
+  border-left: 4px solid var(--color-accent-2, #16a374);
+  border-radius: 0 14px 14px 0;
+  background: color-mix(in srgb, var(--color-accent-2, #16a374) 7%, transparent);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-primary, #233D4D);
+}
+
+.project-detail__faq {
+  margin-top: var(--space-20, 5rem);
+}
+
+.project-detail__faq-title {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-accent, #16a374);
+  margin-bottom: var(--space-6, 1.5rem);
+  text-wrap: balance;
+}
+
+.faq-item {
+  border: 1px solid var(--border-accent, rgba(35, 61, 77, 0.12));
+  border-radius: 14px;
+  margin-bottom: var(--space-4, 1rem);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--color-accent-2, #16a374) 3%, transparent);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--space-5, 1.25rem) var(--space-6, 1.5rem);
+  font-weight: 600;
+  color: var(--text-primary, #233D4D);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-accent-2, #16a374);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item__body {
+  padding: 0 var(--space-6, 1.5rem) var(--space-5, 1.25rem);
+  color: var(--text-secondary, #4b5563);
+  line-height: 1.75;
 }
 
 .project-detail__tags {
-  margin-top: var(--space-16, 6rem);
+  margin: 2rem 0rem 2rem 0rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -2286,6 +2397,29 @@ button {
   }
   .project-detail__tags{
     margin-bottom: 1.2rem;
+  }
+
+  .project-detail__body {
+    max-width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .project-detail__body .lead,
+  .project-detail__quote,
+  .faq-item__body {
+    text-align: left;
+  }
+
+  .project-detail__body h2 {
+    margin-top: var(--space-12, 3rem);
+  }
+
+  .project-detail__quote {
+    margin: var(--space-10, 2.5rem) 0;
+    padding: var(--space-5, 1.25rem) var(--space-5, 1.25rem);
   }
 }
 
