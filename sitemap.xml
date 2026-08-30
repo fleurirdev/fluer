@@ -58,6 +58,16 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://fleurirdev.com/aboutUs</loc>
+    <xhtml:link rel="alternate" hreflang="id" href="https://fleurirdev.com/aboutUs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fleurirdev.com/en/aboutUs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fleurirdev.com/aboutUs" />
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- English pages -->
   <url>
     <loc>https://fleurirdev.com/en/</loc>
@@ -113,10 +123,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+
   <url>
+    <loc>https://fleurirdev.com/en/aboutUs</loc>
     <xhtml:link rel="alternate" hreflang="id" href="https://fleurirdev.com/aboutUs" />
     <xhtml:link rel="alternate" hreflang="en" href="https://fleurirdev.com/en/aboutUs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fleurirdev.com/aboutUs" />
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
